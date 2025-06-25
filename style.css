@@ -7,16 +7,23 @@ body{
   background-color: white;
 }
 
- nav, div{
+
+
+ nav{
   display: flex;
   align-items: normal;
   flex-direction: row;
   flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
  }
  
 .logo{
   row-gap:20px;
+  cursor: pointer;
+  margin-left: 0;
 }
 
 
@@ -27,18 +34,17 @@ input{
    font-weight: 200;
    border-radius: 40px 0px 0px 40px;
    border-right: 0px;
-   height: 37px;
-   width: 540px;
+   height: 35px;
+   width: 530px;
    padding-left: 10px;
+   padding-top: 5px;
    box-shadow: inset 0px 0px 1.5px;
-   justify-content: center;
 }
 
 input:focus{
   outline:none;
   border: 1px solid rgb(14, 105, 241);
   box-shadow: inset 0px 0.5px 2px;
-
 
 }
 /*
@@ -58,9 +64,9 @@ input:focus{
 
 .teclado{
   position: absolute;
-  right: 80px;
+  right: 10px;
   top: 50%;
-  transform: translateY(-80%);
+  transform: translateY(-50%);
   pointer-events: auto;
   padding-left: 5px;
   padding-right: 2px;
@@ -71,14 +77,16 @@ input:focus{
 }
 
 .lupa{
+  position: absolute;
   background-color: rgb(248, 244, 244);
   border: 0.5px solid rgb(222, 206, 206);
   border-radius: 0px 40px 40px 0px ;
-  height: 40.5px;
+  height: 42.46px;
   width: 60px;
   justify-content: center;
   transition: background-color 0.5s;
   cursor: pointer;
+
 }
 
 
@@ -100,26 +108,57 @@ filter: brightness(0.97);
   color: rgb(206, 202, 202);
   filter: brightness(0.9);
 }
+/*
+#busca_mic{
+  display: flex;
+  align-content: space-between ;
+  row-gap: 5px;
+}*/
+
+.div_right{
+  display: flex;
+  margin-right: 0;
+  gap: 10px;
+}
 
 .tres_pontos{
   padding-top: 5px;
 
 }
 
-#busca_mic{
-  display: flex;
-  align-content: space-between ;
-  row-gap: 5px;
-}
-/*
 .login{
-  color: rgb(23, 137, 225);
+  color: rgb(19, 127, 209);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 500;
-  font-size: 14px;
-  padding-top: 5px;
+  font-size: 15px;
+  width: 130px;
+  height: 34px;
+  padding: auto; 
+  margin-right: 0px;
+  margin-top: 0px;
+  border: solid 0.5pt rgb(214, 214, 214);
+  border-radius: 60px;
+  transition: background-color 0.5s;
+  cursor: pointer;
 }
 
 .perfil_img{
-  padding-right:8px;
-}*/
+  padding-right: 0px;
+  padding-top: 6px;
+  padding-left: 10px;
+
+
+}
+
+.login_p{
+position: absolute;
+right: 40px;
+top: 0%;
+transform: translateX(80%);
+transform: translateY(-5%);
+padding: none;
+}
+
+.login:hover{
+  color: rgb(206, 202, 202);
+}
