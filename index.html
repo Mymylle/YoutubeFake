@@ -2,6 +2,8 @@
 <html lang="pt-br">
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,36 +11,48 @@
 </head>
 <body>
     <header>
-    <nav>
-    <div class="logo"> 
-        <img src="menu-de-tres-linhas.png" width="19px" height="20px" >
-    </div>
+        <nav>
+          <!--  <div id="nav-content">-->
 
-        <div class="logo"> 
-            <img src="LogoYoutube.png" width="115px" height="35px" >
-        </div>
+                <div class="bars"> 
+                    <img src="menu-de-tres-linhas.png" width="22px" height="25px">
+                </div>
 
-        <div  style="position: relative;">
+                <div class="logo"> 
+                    <a href="">
+                        <img src="LogoYoutube.png" width="115px" height="35px" >
+                    </a>
+                </div>
 
-            <img class="teclado" src="teclado-eletrico.png" width="22px" height="25px">
-            <input class="slide_input pesquisa_container" type="text"  placeholder="Pesquisar"> 
-            <button  class="lupa " type="submit"> <img class="lupinha" src="lupa-arredondada.png" alt="Pesquisar"  width="20px" height="17px"></button>
+                <div  style="position: relative;">
 
-        </div>
+                    <img class="teclado" src="teclado-eletrico.png" width="22px" height="25px">
+                    <input class="slide_input pesquisa_container" type="text"  placeholder="Pesquisar"> 
+                    <button  class="lupa " type="submit"> <img class="lupinha" src="lupa-arredondada.png" alt="Pesquisar"  width="20px" height="17px"></button>
+
+                </div>
         
-        <div> 
-       <img class="mic" src="botao-de-microfone-de-mensagem-de-voz.png" width="19px" height="20px" alt="Pesquisar com sua voz">
-   </div>
+                <div class="div-mic"> 
+                    <img class="mic" src="botao-de-microfone-de-mensagem-de-voz.png" width="19px" height="20px" alt="Pesquisar com sua voz">
+                </div>
 
     
-    <div class="div_right">
-        <div> 
-            <img class="tres_pontos" src="tres-pontos.png" width="24px" height="24px" alt="Pesquisar com sua voz">
-        </div>
-        <div class="login">
-            <img class="perfil_img" src="do-utilizador.png" width="19px" height="20px"><p class="login_p"> Fazer login</p>
-    </div>
+                <div class="div_right">
+
+                    <div id="points"> 
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+
+                    <div class="login">
+                        <img class="perfil_img" src="do-utilizador.png" width="19px" height="20px"><p class="login_p"> Fazer login</p>
+                    </div>
+                    
+                </div>
+
+         <!--   </div> -->   
     </nav>
+
+
 
 </header>
 </body>
